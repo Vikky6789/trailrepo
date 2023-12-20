@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway:wght@200&display=swap');
+*{
+padding: 0;
+margin:0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+
+@media only screen and (max-width:450px){
+    header{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        padding:4px 5px;
+        display: flex;
+        justify-content: space-between;
+        justify-items: flex-end;
+        align-items: center;
+        z-index: 10;
+    }
+    .logo{
+        font-size: 3em;
+        color:blue;
+        cursor: default;
+    }
+    .navbar{
+        margin-left:2px;
+    }
+    .navbar a{
+        font-size:7px;
+        color:brown;
+        background:lightcyan;
+        text-decoration: underline;
+        text-decoration-color: red;
+        font-weight: 100;
+        transition: .5s;
+    }
+    .navbar a:hover{
+        color:white;
+        background:transparent;
+    }
+    .chat{
+        color: white;
+        text-decoration: none;
+        padding:2px 8px;
+        background-color: rgb(126, 15, 217);
+        border-radius:30px;
+        border:2px solid darkred;
+        font-weight: 500;
+        transition: .3s;
+    }
+    .chat:hover{
+        background: transparent;
+        color:rgb(126, 15, 217);
+        transition: 0.3s;
+    }
+    .section{
+        position: relative;
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        background: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+    .content {
+        max-width: 5px;
+        color: #555;
+    }
+    .content h2 {
+        font-size: 3em;
+    }
+    .content h3 {
+        color: #7d2ae8;
+    }
+    .content h4 {
+        font-size: 2em;
+        color:blue;
+    }
+    .content p {
+        padding: 2px 0 20px 0;
+    }
+    .list{
+        color:brown ;
+    }
+    .buttons a {
+        color: #fff;
+        text-decoration: none;
+        position:relative;
+        top:2px;   
+        padding: 1px;
+        background: #7d2ae8;
+        border-radius: 0px;
+        border: 2px solid #7d2ae8;
+        font-weight: 100;
+        transition: .3s;
+    }
+    .buttons a:hover:nth-child(1) {
+        color: #7d2ae8;
+        background: transparent;
+    }
+    .buttons a:nth-child(2) {
+        color: #7d2ae8;
+        background: transparent;
+
+    }
+    .buttons a:hover:nth-child(2) {
+        color: #fff;
+        background: #7d2ae8;
+    }
+    .social-icons {
+        position: absolute;
+        bottom: 2%;
+    }
+    .social-icons a {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #7d2ae8;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 15px;
+        border: 1px solid #fff;
+        outline: 2px solid #7d2ae8;
+        transition: .3s;
+    }
+    .social-icons a:hover {
+        transform: translateY(-5px);
+    }
+    .social-icons a i {
+        color: #fff;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:700px){
+    header{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        padding:30px 50px;
+        display: flex;
+        justify-content: space-between;
+        justify-items: flex-end;
+        align-items: center;
+        z-index: 10;
+    }
+    .logo{
+        font-size: 3em;
+        color:blue;
+        cursor: default;
+    }
+    .navbar{
+        margin-left:10px;
+    }
+    .navbar a{
+        font-size:20px;
+        color:brown;
+        background:lightcyan;
+        text-decoration: underline;
+        text-decoration-color: red;
+        font-weight: 100;
+        transition: .5s;
+    }
+    .navbar a:hover{
+        color:white;
+        background:transparent;
+    }
+    .chat{
+        color: white;
+        text-decoration: none;
+        padding:5px 20px;
+        background-color: rgb(126, 15, 217);
+        border-radius:30px;
+        border:2px solid darkred;
+        font-weight: 500;
+        transition: .3s;
+    }
+    .chat:hover{
+        background: transparent;
+        color:rgb(126, 15, 217);
+        transition: 0.3s;
+    }
+    .section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        padding: 30px 100px;
+    }
+    .content {
+        max-width: 500px;
+        color: #555;
+    }
+    .content h2 {
+        font-size: 3em;
+    }
+    .content h3 {
+        color: #7d2ae8;
+    }
+    .content h4 {
+        font-size: 2em;
+        color:blue;
+    }
+    .content p {
+        padding: 5px 0 40px 0;
+    }
+    .list{
+        color:brown;
+    }
+    .buttons a {
+        color: #fff;
+        text-decoration: none;
+        position:relative;
+        top:20px;   
+        padding: 10px;
+        background: #7d2ae8;
+        border-radius: 10px;
+        border: 2px solid #7d2ae8;
+        font-weight: 100;
+        transition: .3s;
+    }
+    .buttons a:hover:nth-child(1) {
+        color: #7d2ae8;
+        background: transparent;
+    }
+    .buttons a:nth-child(2) {
+        color: #7d2ae8;
+        background: transparent;
+        margin-left: 30px;
+        padding: 10px 30px;
+    }
+    .buttons a:hover:nth-child(2) {
+        color: #fff;
+        background: #7d2ae8;
+    }
+    .social-icons {
+        position: absolute;
+        bottom: 50px;
+    }
+    .social-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background: #7d2ae8;
+        border-radius: 50%;
+        margin-right: 22px;
+        text-align: center;
+        line-height: 35px;
+        border: 1px solid #fff;
+        outline: 2px solid #7d2ae8;
+        transition: .3s;
+    }
+    .social-icons a:hover {
+        transform: translateY(-5px);
+    }
+    .social-icons a i {
+        color: #fff;
+    }
+}
+@media only screen and (min-width:700px){
+    header{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        padding:30px 50px;
+        display: flex;
+        justify-content: space-between;
+        justify-items: flex-end;
+        align-items: center;
+        z-index: 10;
+    }
+    .logo{
+        font-size: 3em;
+        color:blue;
+        cursor: default;
+    }
+    .navbar{
+        margin-left:10px;
+    }
+    .navbar a{
+        font-size:20px;
+        color:brown;
+        background:lightcyan;
+        text-decoration: underline;
+        text-decoration-color: red;
+        font-weight: 100;
+        transition: .5s;
+    }
+    .navbar a:hover{
+        color:white;
+        background:transparent;
+    }
+    .chat{
+        color: white;
+        text-decoration: none;
+        padding:5px 20px;
+        background-color: rgb(126, 15, 217);
+        border-radius:30px;
+        border:2px solid darkred;
+        font-weight: 500;
+        transition: .3s;
+    }
+    .chat:hover{
+        background: transparent;
+        color:rgb(126, 15, 217);
+        transition: 0.3s;
+    }
+    .section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        padding: 30px 100px;
+    }
+    .content {
+        max-width: 500px;
+        color: #555;
+    }
+    .content h2 {
+        font-size: 3em;
+    }
+    .content h3 {
+        color: #7d2ae8;
+    }
+    .content h4 {
+        font-size: 2em;
+        color:blue;
+    }
+    .content p {
+        padding: 5px 0 40px 0;
+    }
+    .list{
+        color:brown;
+    }
+    .buttons a {
+        color: #fff;
+        text-decoration: none;
+        position:relative;
+        top:20px;   
+        padding: 10px;
+        background: #7d2ae8;
+        border-radius: 10px;
+        border: 2px solid #7d2ae8;
+        font-weight: 100;
+        transition: .3s;
+    }
+    .buttons a:hover:nth-child(1) {
+        color: #7d2ae8;
+        background: transparent;
+    }
+    .buttons a:nth-child(2) {
+        color: #7d2ae8;
+        background: transparent;
+        margin-left: 30px;
+        padding: 10px 30px;
+    }
+    .buttons a:hover:nth-child(2) {
+        color: #fff;
+        background: #7d2ae8;
+    }
+    .social-icons {
+        position: absolute;
+        bottom: 50px;
+    }
+    .social-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background: #7d2ae8;
+        border-radius: 50%;
+        margin-right: 22px;
+        text-align: center;
+        line-height: 35px;
+        border: 1px solid #fff;
+        outline: 2px solid #7d2ae8;
+        transition: .3s;
+    }
+    .social-icons a:hover {
+        transform: translateY(-5px);
+    }
+    .social-icons a i {
+        color: #fff;
+    }
+}
